@@ -57,6 +57,7 @@ nav ul li a:hover {
 main {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 section.left,
@@ -77,6 +78,7 @@ section.right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 1 200px;
 }
 
 section.right p {
@@ -136,5 +138,12 @@ div.fac p {
 }
 
 section.left {
-    padding: 2rem
+    padding: 2rem;
+    flex: 1 1 150px;
+}
+
+@media screen and (max-width: 650px) {
+    nav ul {
+        flex-direction: column;
+    }
 }
